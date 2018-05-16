@@ -1,14 +1,44 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar  color = "navBar">
     <ion-title>
-      Ionic Blank
+      Portfólio
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding >
+  <ion-slides pager>
+
+    <ion-slide >
+      <ion-icon class = "hand-size animated infinite flipInX" name="md-hand"></ion-icon>
+      <h2>Olá, Bem-vindo ao meu portifólio</h2>
+      
+    </ion-slide>
+  
+    <ion-slide  class = "hand-size animated infinite bounce" >
+      <h2>Meu nome é Cristovão farias</h2>
+    </ion-slide>
+  
+    <ion-slide class = "hand-size animated infinite pulse" >
+      <h2>Desenvolvo aplicativos mobile e jogos também</h2>
+    </ion-slide>
+    
+    
+    <ion-slide >
+      <img class="img" src = "assets/imgs/equipePipi.png" />
+      <h2>Participei da GlobalGameJam e conheci uma galera excepcional!!!</h2>
+    </ion-slide>
+  
+    <ion-slide class = "hand-size animated infinite headShake" >
+        <h2>Você tem alguma ideia e quer criar algum jogo ou App??</h2>
+    </ion-slide>
+  
+    <ion-slide class = "hand-size animated infinite pulse" >
+        <h2>Que tal entrar em contato para colocar essa ideia fora da caixa??</h2>
+      <button  ion-button color = "navBar" outline (click) = "changePage() ">Vamos Lá !!</button>    
+    </ion-slide>
+  
+    
+  </ion-slides>
+  
 </ion-content>
